@@ -1,0 +1,7 @@
+def spin_words(sentence):
+    wordlist=sentence.split(" ")
+    for i in range(len(wordlist)):
+        if len(wordlist[i])>=5:
+            wordlist[i]=wordlist[i][::-1]
+    newlist=" ".join(wordlist)
+    return newlist
