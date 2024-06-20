@@ -1,0 +1,12 @@
+def likes(names):
+    if len(names)==0:
+        wholikes="no one likes"
+    elif len(names)==1:
+        wholikes=names[0]+" likes"
+    elif len(names)==2:
+        wholikes=names[0]+" and "+names[1]+" like"
+    elif len(names)==3:
+        wholikes=names[0]+", "+names[1]+" and "+names[2]+" like"
+    elif len(names)>=4:
+        wholikes=names[0]+", "+names[1]+" and "+str((len(names)-2))+" others like"
+    return wholikes+" this"
