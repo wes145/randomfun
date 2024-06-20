@@ -1,0 +1,10 @@
+def duplicate_count(text):
+    # Your code goes here
+    newt=text.lower()
+    counted=set()
+    dupes=0
+    for i in range(len(text)):
+        if newt.count(newt[i])>1 and newt[i] not in counted:
+            dupes+=1
+            counted.add(newt[i])
+    return dupes
